@@ -4,8 +4,6 @@ defmodule ExLocale do
   """
 
   alias ExLocale.Locale
-  alias NimbleCSV
-
   alias NimbleCSV.RFC4180, as: CSV
 
   def list_locales do
