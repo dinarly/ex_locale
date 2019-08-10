@@ -59,7 +59,7 @@ defmodule ExLocale do
     |> CSV.parse_stream
     |> Stream.map(fn [id, name] ->
       %{id: id, name: name}
-      IO.puts inspect(id)
+      IO.puts inspect("#{id}: #{name}")
     end)
   end
 end
