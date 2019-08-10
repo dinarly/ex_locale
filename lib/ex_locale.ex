@@ -11,24 +11,24 @@ defmodule ExLocale do
         id: :en_GB,
         name: "English (United Kingdom)",
         translations: %{
-          fr_FR: "anglais (Royaume-Uni)",
-          ar_SY: "الإنجليزية (المملكة المتحدة)"
+          "fr_FR" => %{name: "anglais (Royaume-Uni)"},
+          "ar_SY" => %{name: "الإنجليزية (المملكة المتحدة)"}
         }
       },
       %Locale{
         id: :fr_FR,
         name: "French (France)",
         translations: %{
-          fr_FR: "français (France)",
-          ar_SY: "الفرنسية (فرنسا)"
+          "fr_FR" => %{name: "français (France)"},
+          "ar_SY" => %{name: "الفرنسية (فرنسا)"}
         }
       },
       %Locale{
         id: :ar_SY,
         name: "Arabic (Syria)",
         translations: %{
-          fr_FR: "arabe (Syrie)",
-          ar_SY: "العربية (سوريا)"
+          "fr_FR" => %{name: "arabe (Syrie)"},
+          "ar_SY" => %{name: "العربية (سوريا)"}
         }
       }
     ]
