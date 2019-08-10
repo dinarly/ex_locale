@@ -48,8 +48,8 @@ defmodule ExLocale do
       563
 
   """
-  def create_locales do
-    load_csv("locale-list/data/en_GB/locales.csv")
+  def create_locales(locale) do
+    load_csv("locale-list/data/#{locale}/locales.csv")
     |> Enum.count()
   end
 
