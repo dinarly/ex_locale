@@ -4,6 +4,9 @@ defmodule ExLocale do
   """
 
   alias ExLocale.Locale
+  alias NimbleCSV
+
+  alias NimbleCSV.RFC4180, as: CSV
 
   def list_locales do
     [
@@ -44,10 +47,21 @@ defmodule ExLocale do
   ## Examples
 
       iex> ExLocale.create_locales()
-      [:en_GB, :en_US, :fr_FR]
+      563
 
   """
   def create_locales do
-    [:en_GB, :en_US, :fr_FR]
+    load_csv("locale-list/data/en_GB/locales.csv")
+    |> Enum.count()
+  end
+
+  def load_csv(filename) do
+    filename
+    |> File.stream!
+    |> CSV.parse_stream
+    |> Stream.map(fn [id, name] ->
+      %{id: id, name: name}
+      IO.puts inspect(id)
+    end)
   end
 end

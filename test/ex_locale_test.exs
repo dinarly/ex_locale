@@ -3,6 +3,6 @@ defmodule ExLocaleTest do
   doctest ExLocale
 
   test "lists locales" do
-    assert ExLocale.create_locales() == [:en_GB, :en_US, :fr_FR]
+    assert ExLocale.create_locales() == 563
   end
 end
