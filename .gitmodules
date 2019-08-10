@@ -1,0 +1,3 @@
+[submodule "locale-list"]
+	path = locale-list
+	url = https://github.com/umpirsky/locale-list.git
