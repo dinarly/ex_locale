@@ -34,6 +34,10 @@ defmodule ExLocale do
     ]
   end
 
+  def shuffle(locales) do
+    Enum.shuffle(locales)
+  end
+
   @doc """
   Hello world.
 
