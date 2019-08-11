@@ -2,6 +2,11 @@
 
 ExLocale is an Elixir module for the awesome https://github.com/umpirsky/locale-list to populate an Ecto database with this translated locale data licensed under the MIT license.
 
+This repo contains a submodule, please clone correctly or use the following command later:
+```
+git submodule update --init --recursive --progress
+```
+
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
