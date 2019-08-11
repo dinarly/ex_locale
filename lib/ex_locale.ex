@@ -39,12 +39,20 @@ defmodule ExLocale do
     Enum.shuffle(locales)
   end
 
+  def get_locale_ids do
+    list_locales
+    |> Enum.each fn locale ->
+       Map.get(locale, :id)
+       |> IO.puts
+    end
+  end
+
   @doc """
   Hello world.
 
   ## Examples
 
-      iex> ExLocale.create_locales()
+      iex> ExLocale.create_locales("en_GB")
       563
 
   """

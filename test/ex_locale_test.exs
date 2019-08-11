@@ -3,6 +3,6 @@ defmodule ExLocaleTest do
   doctest ExLocale
 
   test "lists locales" do
-    assert ExLocale.create_locales() == 563
+    assert ExLocale.create_locales("en_GB") == 563
   end
 end
