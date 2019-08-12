@@ -6,6 +6,7 @@ defmodule <%= repo %>.Migrations.ExLocale do
       add :id, :text, primary_key: true, null: false
       add :name, :text, null: false, default: ""
       add :active, :boolean, default: false
+      add :translations, :map
     end
   end
 end
