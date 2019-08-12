@@ -16,7 +16,6 @@ defmodule Mix.Tasks.ExLocale.GenExLocaleMigration do
       Mix.raise "mix ex_locale.gen_ex_locale_migration can only be run inside an application directory"
     end
 
-    IO.puts args
     {_opts, [repo], []} = OptionParser.parse(args, switches: [debug: :boolean])
 
     source = Application.app_dir :ex_locale, "priv/migrations/ex_locale.exs"
