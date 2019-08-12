@@ -13,7 +13,7 @@ defmodule Mix.Tasks.ExLocale.GenExLocaleMigration do
    @doc false
    def run(args) do
     if Project.umbrella? do
-      Mix.raise "mix ex_locale.gen_ex_locale_migration can only be run inside an application directory"
+      Mix.raise "mix exlocale.gen_ex_locale_migration can only be run inside an application directory"
     end
 
     {_opts, [repo], []} = OptionParser.parse(args)
