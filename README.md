@@ -20,7 +20,13 @@ def deps do
 end
 ```
 
+## Database migration
+Here we use the repo example name of `Dinarly`:
+
+```
+mix ex_locale.gen_ex_locale_migration Dinarly
+```
+
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/ex_locale](https://hexdocs.pm/ex_locale).
-
