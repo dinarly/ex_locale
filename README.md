@@ -1,6 +1,6 @@
 # ExLocale
 
-ExLocale is an Elixir module for the awesome https://github.com/umpirsky/locale-list to populate an Ecto database with this translated locale data licensed under the MIT license.
+ExLocale is a (work in progress) Elixir module for the awesome https://github.com/umpirsky/locale-list to facilitate a GenServer with this translated locale data licensed under the MIT license.
 
 This repo contains a submodule, please clone correctly or use the following command later:
 ```
